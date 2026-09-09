@@ -6,6 +6,8 @@ cors_allow_origins = []
 
 [kora.cache]
 enabled = false
+default_ttl = 300
+account_ttl = 60
 
 [validation]
 price_source = "Mock"
