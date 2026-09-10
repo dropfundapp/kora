@@ -97,7 +97,7 @@ type = "margin"
 margin = 0.10
 
 [validation.token_2022]
-transfer_hook_policy = "deny_mutable_for_delayed_signing"
+transfer_hook_policy = "deny_all"
 blocked_mint_extensions = [
     "confidential_transfer_mint",
     "confidential_mint_burn",
