@@ -10,7 +10,7 @@ default_ttl = 300
 account_ttl = 60
 
 [validation]
-price_source = "Mock"
+price_source = "Jupiter"
 max_allowed_lamports = 1000000
 max_signatures = 3
 allow_durable_transactions = false
@@ -81,7 +81,7 @@ allow_close = false
 
 [kora.enabled_methods]
 liveness = true
-estimate_transaction_fee = false
+estimate_transaction_fee = true
 estimate_bundle_fee = false
 get_supported_tokens = false
 sign_transaction = false
@@ -93,7 +93,8 @@ get_payer_signer = true
 get_version = true
 
 [validation.price]
-type = "free"
+type = "margin"
+margin = 0.10
 
 [validation.token_2022]
 transfer_hook_policy = "deny_mutable_for_delayed_signing"
