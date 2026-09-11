@@ -94,7 +94,7 @@ get_version = true
 
 [validation.price]
 type = "margin"
-margin = 0.10
+margin = 0.0
 
 [validation.token_2022]
 transfer_hook_policy = "deny_all"
