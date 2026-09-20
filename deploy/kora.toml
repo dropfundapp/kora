@@ -11,7 +11,7 @@ account_ttl = 60
 
 [validation]
 price_source = "Jupiter"
-max_allowed_lamports = 1000000
+max_allowed_lamports = 3000000
 max_signatures = 3
 allow_durable_transactions = false
 allowed_programs = [
@@ -93,8 +93,7 @@ get_payer_signer = true
 get_version = true
 
 [validation.price]
-type = "margin"
-margin = 0.0
+type = "free"
 
 [validation.token_2022]
 transfer_hook_policy = "deny_all"
